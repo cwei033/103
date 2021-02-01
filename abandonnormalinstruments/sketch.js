@@ -5,6 +5,7 @@ var volhistory = [];
 var img;
 let iconRotate = 0;
 let rSpeed = 0.1;
+let cnv;
 
 function preload() {
   song = loadSound('103obliquestrategies.mp3');
@@ -12,7 +13,7 @@ function preload() {
 }
 
 function setup() {
-  createCanvas(windowWidth, windowHeight);
+  cnv = createCanvas(windowWidth, windowHeight);
 
   noStroke();
   angleMode(DEGREES);
@@ -21,7 +22,6 @@ function setup() {
   imageMode(CENTER);
 
   amp = new p5.Amplitude();
-  song.play();
 
 }
 
@@ -30,6 +30,9 @@ function draw() {
   background(0);
   var vol = amp.getLevel();
   volhistory.push(vol);
+
+  cnv.mouseClicked(songPlay);
+
   // fill(255);
   // textFont('monospace');
   // textSize(width*.01);
@@ -68,4 +71,8 @@ function drawIcon(rotation) {
   img.resize(width*.2, 0);
   image(img, 0, 0);
   pop();
+}
+
+function songPlay() {
+  song.play();
 }
