@@ -48,10 +48,8 @@ canvas {
 }
 
 #img {
-  height: 65%;
+  height: 70%;
   display: flex;
-  justify-content: center;
-  align-items: center;
  }
 
 #bottom {
