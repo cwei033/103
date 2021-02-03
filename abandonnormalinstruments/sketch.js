@@ -12,6 +12,10 @@ function preload() {
   img = loadImage('icon.png');
 }
 
+function windowResized() {
+  resizeCanvas(windowWidth, windowHeight);
+}
+
 function setup() {
   cnv = createCanvas(windowWidth, windowHeight);
 

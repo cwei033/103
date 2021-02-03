@@ -1,0 +1,59 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
+html, body {
+  height: 100%;
+  background-color: white;
+  background-image: url('soft_circle_scales.png');
+
+}
+
+h1 {
+  text-align: center;
+  font-family: 'Bebas Neue', monospace;
+  font-size: 55px;
+  text-shadow: 5px 3px 2px #a1a1a1;
+}
+
+#headerspace {
+  margin-top: -10px;
+}
+
+h2 {
+  text-align: center;
+  font-family: 'Bebas Neue', monospace;
+  font-size: 30px;
+  margin-bottom: 18px;
+}
+
+p {
+  margin: 20px 150px;
+  padding: 20px;
+  background-color: white;
+  line-height: 22px;
+}
+
+canvas {
+  display: block;
+  border: 8px solid white;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
+
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: auto;
+}
+
+#img {
+  height: 65%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+ }
+
+#bottom {
+  padding-bottom: 50px;
+}
