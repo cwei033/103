@@ -454,10 +454,11 @@ function drawMenu() {
   rect(width * .5, height * .5, width * .745, height * .245, width * .025);
   textAlign(CENTER);
   fill(255);
+  textFont('monospace');
   textSize(35);
-  text('*Teddy Circus*', width * .5, height * .49);
+  text('*Teddy Circus*', width * .5, height * .48);
   textSize(10);
-  text('[pop the balloons!]', width * .68, height * .52);
+  text('[pop the balloons!]', width * .68, height * .515);
   textSize(20);
   fill('#fffd99');
   text('play', width * .5, height * .569);
