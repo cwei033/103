@@ -30,6 +30,8 @@ p {
   padding: 20px;
   background-color: white;
   line-height: 22px;
+  font-family: monospace;
+  font-size: 15px;
 }
 
 canvas {
