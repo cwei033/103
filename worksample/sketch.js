@@ -160,7 +160,7 @@ function draw() {
     textAlign(CENTER);
     textSize(25);
     textFont('monospace');
-    fill(40);
+    fill('#424242');
     text('PRESS ME!', width*.5, height*.5);
     pop();
   }
