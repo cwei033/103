@@ -70,6 +70,7 @@ function startSketch() {
 function draw() {
   // console.log("mic:" + mic.getLevel());
   // console.log(mouseX);
+
   if (sketchStarted) {
 
     armSwingRight = map(mic.getLevel(1), 0, .3, 330, 295, true);
@@ -154,6 +155,14 @@ function draw() {
       drawBorder();
       drawMenu();
     }
+  } else {
+    push();
+    textAlign(CENTER);
+    textSize(25);
+    textFont('monospace');
+    fill(40);
+    text('PRESS ME!', width*.5, height*.5);
+    pop();
   }
 }
 
